@@ -1,0 +1,148 @@
+:root{
+  --soft-blue: hsl(215, 51%, 70%);
+  --cyan: hsl(178, 100%, 50%);
+  --very-dark-blue-bg: hsl(217, 54%, 11%);
+  --very-dark-blue-card: hsl(216, 50%, 16%);
+  --very-dark-blue-line: hsl(215, 32%, 27%);
+  --white: hsl(0, 0%, 100%);
+  --outfit: 'Outfit', sans-serif;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+img{
+  display: block;
+  max-width: 100%;
+}
+
+body{
+  font-family: var(--outfit);
+  font-size: 18px;
+  font-weight: 400;
+  background: var(--very-dark-blue-bg);
+}
+
+.container{
+  width: 400px;
+  max-width: 100%;
+  display: block;
+  margin: 100px auto;
+  background: var(--very-dark-blue-card);
+  padding: 40px;
+  border-radius: 30px;
+  position: relative;
+}
+
+.equilibrium{
+  width: 300px;
+  margin: 0 auto;
+  border-radius: 30px;
+}
+
+.overlay{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 300px;
+  width: 300px;
+  opacity: 0;
+  transition: .5s ease;
+  background: hsla(178, 100%, 50%, 0.5);
+  margin: 40px auto;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.overlay img{
+  width: 50px;
+  opacity: 1;
+  margin: 115px auto;
+}
+
+.overlay:hover{
+  opacity: 1;
+}
+
+.container h1{
+  color: var(--white);
+  font-weight: 600;
+  margin-left: 20px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+
+.container h1:hover{
+  color: var(--cyan);
+}
+
+.container p{
+  color: var(--soft-blue);
+  margin-left: 20px;
+  margin-bottom: 30px;
+}
+
+.price{
+  display: flex;
+  justify-content: space-between;
+  margin-left: 30px;
+  margin-bottom: 30px;
+  border-bottom: 2px solid var(--very-dark-blue-line);
+  padding-bottom: 30px;
+}
+
+.price span{
+  display: inline-flex;
+  gap: 10px;
+}
+
+img[alt="Clock"]{
+  width: 20px;
+}
+
+.ethereum{
+  color: var(--cyan);
+}
+
+.clock{
+  color: var(--soft-blue);
+}
+
+.name{
+  display: inline-flex;
+  gap: 10px;
+  margin-left: 30px;
+  color: var(--soft-blue);
+}
+
+.name img{
+  width: 30px;
+  border: 1px solid var(--white);
+  border-radius: 20px;
+}
+
+.name a{
+  display: contents;
+  color: var(--white);
+  text-decoration: none;
+}
+
+.name a:hover{
+  color: var(--cyan);
+}
+
+.attribution{
+  color: var(--white);
+  text-align: center;
+}
+
+.attribution a{
+  color: var(--white);
+}
